@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Application de changement de couleur</string>
+    <string-array name="colors">
+        <item>Bleu</item>
+        <item>Rouge</item>
+        <item>Jaune</item>
+        <item>Gris</item>
+        <item>Aqua</item>
+        <item>Fuchsia</item>
+        <item>Sarcelle</item>
+        <item>Vert</item>
+        <item>Cyan</item>
+        <item>Magenta</item>
+        <item>Bordeaux</item>
+    </string-array>
+</resources>
+

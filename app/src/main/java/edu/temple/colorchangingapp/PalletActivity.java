@@ -2,21 +2,31 @@ package edu.temple.colorchangingapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.util.Log;
 
 public class PalletActivity extends AppCompatActivity {
     GridView gridView;
-    String[] colors = {"Blue","Red","Yellow","Grey","Aqua","Fuchsia","Teal","Green","Cyan","Magenta","Maroon"};
+
+    String[] colors = {"Blue", "Red", "Yellow", "Grey", "Aqua", "Fuchsia", "Teal", "Green", "Cyan", "Magenta", "Maroon"};
+
+
 
     public static final String COLOR_KEY = "colorkey";
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        String[] colors = getResources().getStringArray(R.array.colors);
+        //Log.w("","colors[1]");
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 

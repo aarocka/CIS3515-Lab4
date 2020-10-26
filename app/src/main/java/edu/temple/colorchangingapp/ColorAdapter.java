@@ -1,6 +1,7 @@
 package edu.temple.colorchangingapp;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.graphics.Color;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,9 +14,11 @@ public class ColorAdapter extends BaseAdapter {
 
     String[] colors;
 
+    String[] colors1 = {"Bleu","Rouge","Jaune","Gris","Aqua","Fuchsia","Sarcelle","Vert","Cyan","Magenta","Bordeaux"};
+
     public ColorAdapter(Context context, String[] colors){
         this.context=context;
-        this.colors=colors;
+        this.colors= new String[] {"Blue", "Red", "Yellow", "Grey", "Aqua", "Fuchsia", "Teal", "Green", "Cyan", "Magenta", "Maroon"};
     }
 
     @Override
